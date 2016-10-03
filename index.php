@@ -44,13 +44,13 @@
 
             for($i=0; $i<31; $i++){
                 $dateArray[$i] = $i+1;
-                if ($dateArray[$i] == 1 || $dateArray == 21 || $dateArray == 31){
+                if ($dateArray[$i] == 1 || $dateArray[$i] == 21 || $dateArray[$i] == 31){
                     $dateArray[$i] = $i+1 . "st";
                 }
-                else if ($dateArray == 2 || $dateArray == 22){
+                else if ($dateArray[$i] == 2 || $dateArray[$i] == 22){
                     $dateArray[$i] = $i+1 . "nd";
                 }
-                else if ($dateArray == 3 || $dateArray == 23){
+                else if ($dateArray[$i] == 3 || $dateArray[$i] == 23){
                     $dateArray[$i] = $i+1 . "rd";
                 }
                 else{
