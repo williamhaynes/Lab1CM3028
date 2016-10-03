@@ -25,7 +25,7 @@
             else if ($myage>=16) print "specs";
             else print "nothing bitch";*/
 
-            $wantedgoods = "mugs";
+            $wantedgoods = "specs";
 
 
 
