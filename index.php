@@ -48,10 +48,10 @@
                     $dateArray[$i] = $i+1 . "st";
                 }
                 else if ($dateArray == 2 || $dateArray == 22){
-                    $dateArray[$i] = $dateArray[$i] . "nd";
+                    $dateArray[$i] = $i+1 . "nd";
                 }
                 else if ($dateArray == 3 || $dateArray == 23){
-                    $dateArray[$i] = $dateArray[$i] . "rd";
+                    $dateArray[$i] = $i+1 . "rd";
                 }
                 else{
                     $dateArray[$i] = $dateArray[$i] . "th";
