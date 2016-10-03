@@ -18,11 +18,11 @@
             else{
                 print "I don't know you";
             }*/
-            $myage = 12;
+            $myage = 16;
 
-            if ($myage>21) print "sausage rolls";
-            else if ($myage>18) print "mugs";
-            else if ($myage>16) print "specs";
+            if ($myage>=21) print "sausage rolls";
+            else if ($myage>=18) print "mugs";
+            else if ($myage>=16) print "specs";
             else print "nothing bitch";
             ?>
         </p>
