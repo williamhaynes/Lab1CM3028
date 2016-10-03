@@ -18,12 +18,31 @@
             else{
                 print "I don't know you";
             }*/
-            $myage = 18;
+            /*$myage = 18;
 
             if ($myage>=21) print "sausage rolls";
             else if ($myage>=18) print "mugs";
             else if ($myage>=16) print "specs";
-            else print "nothing bitch";
+            else print "nothing bitch";*/
+
+            $wantedgoods = "mugs";
+
+
+
+            switch($wantedgoods){
+                case "mugs":
+                    echo "Over 18 for Mugs";
+                    break;
+                case "specs":
+                    echo "Over 16 for Specs";
+                    break;
+                case "sausage rolls":
+                    echo "Over 21 for Sausage Rolls";
+                    break;
+                default:
+                    echo "Too young for anything";
+
+            }
             ?>
         </p>
     </body>
