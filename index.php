@@ -45,7 +45,7 @@
             for($i=0; $i<31; $i++){
                 $dateArray[$i] = $i+1;
                 if ($dateArray[$i] == 1 || $dateArray == 21 || $dateArray == 31){
-                    $dateArray[$i] = $dateArray[$i] . "st";
+                    $dateArray[$i] = $i+1 . "st";
                 }
                 else if ($dateArray == 2 || $dateArray == 22){
                     $dateArray[$i] = $dateArray[$i] . "nd";
