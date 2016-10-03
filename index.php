@@ -62,13 +62,15 @@
                 else{
                     $dateArray[$i] = $dateArray[$i] . "th";
                 }
+
+                print "<p>On the $dateArray[$i] of the month $addedText</p>";
             }
 
 
-
+/*
             foreach ($dateArray as $date){
                 print "<p>On the $date of the month $addedText</p>";
-            }
+            }*/
             ?>
         </p>
     </body>
