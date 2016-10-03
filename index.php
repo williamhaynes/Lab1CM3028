@@ -25,10 +25,7 @@
             else if ($myage>=16) print "specs";
             else print "nothing bitch";*/
 
-            $wantedgoods = "specs";
-
-
-
+            /*$wantedgoods = "specs";
             switch($wantedgoods){
                 case "mugs":
                     echo "Over 18 for Mugs";
@@ -41,7 +38,28 @@
                     break;
                 default:
                     echo "Too young for anything";
+            }*/
 
+            $dateArray = array();
+
+            for($i=0; $i<31; $i++){
+                $dateArray[i] = i+1;
+                if ($date == 1 || $date == 21 || $date == 31){
+                    $date += "st";
+                }
+                else if ($date == 2 || $date == 22){
+                    $date += "nd";
+                }
+                else if ($date == 3 || $date == 23){
+                    $date += "rd";
+                }
+                else{
+                    $date +="th";
+                }
+            }
+
+            foreach ($dateArray as $date){
+                print "<p>On the $date of the month</p>";
             }
             ?>
         </p>
