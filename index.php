@@ -41,9 +41,16 @@
             }*/
 
             $dateArray = array();
+            $addedText = "";
 
             for($i=0; $i<31; $i++){
                 $dateArray[$i] = $i+1;
+
+                if ($dateArray[$i] % 4 == 0) $addedText = " specs and sausage rolls are available";
+                else if ($dateArray[$i] % 3 == 0) $addedText = " mugs are available";
+                else if ($dateArray[$i] % 2 == 0) $addedText = " specs are available";
+                else $addedText = "no products are available";
+
                 if ($dateArray[$i] == 1 || $dateArray[$i] == 21 || $dateArray[$i] == 31){
                     $dateArray[$i] = $i+1 . "st";
                 }
@@ -58,8 +65,10 @@
                 }
             }
 
+
+
             foreach ($dateArray as $date){
-                print "<p>On the $date of the month</p>";
+                print "<p>On the $date of the month $addedText</p>";
             }
             ?>
         </p>
