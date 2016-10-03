@@ -43,18 +43,18 @@
             $dateArray = array();
 
             for($i=0; $i<31; $i++){
-                $dateArray[i] = i+1;
-                if ($date == 1 || $date == 21 || $date == 31){
-                    $date += "st";
+                $dateArray[$i] = $i+1;
+                if ($dateArray[$i] == 1 || $dateArray == 21 || $dateArray == 31){
+                    $dateArray[$i] . "st";
                 }
-                else if ($date == 2 || $date == 22){
-                    $date += "nd";
+                else if ($dateArray == 2 || $dateArray == 22){
+                    $dateArray[$i] . "nd";
                 }
-                else if ($date == 3 || $date == 23){
-                    $date += "rd";
+                else if ($dateArray == 3 || $dateArray == 23){
+                    $dateArray[$i] . "rd";
                 }
                 else{
-                    $date +="th";
+                    $dateArray[$i] . "th";
                 }
             }
 
