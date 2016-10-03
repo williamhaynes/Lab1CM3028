@@ -45,16 +45,16 @@
             for($i=0; $i<31; $i++){
                 $dateArray[$i] = $i+1;
                 if ($dateArray[$i] == 1 || $dateArray == 21 || $dateArray == 31){
-                    $dateArray[$i] . "st";
+                    $dateArray[$i] = $dateArray[$i] . "st";
                 }
                 else if ($dateArray == 2 || $dateArray == 22){
-                    $dateArray[$i] . "nd";
+                    $dateArray[$i] = $dateArray[$i] . "nd";
                 }
                 else if ($dateArray == 3 || $dateArray == 23){
-                    $dateArray[$i] . "rd";
+                    $dateArray[$i] = $dateArray[$i] . "rd";
                 }
                 else{
-                    $dateArray[$i] . "th";
+                    $dateArray[$i] = $dateArray[$i] . "th";
                 }
             }
 
