@@ -1,8 +1,7 @@
-include(“DBconnect.php”);
+
 <!DOCTYPE html>
 <html>
 <head>
-
 </head>
 <body>
 <?php
@@ -14,10 +13,10 @@ include(“DBconnect.php”);
  */
     // connect to server and sel ect database
     $db = new mysqli(
-    "hostname",
-    "username",
-    "password",
-    "db_name");
+    "us-cdbr-azure-southcentral-f.cloudapp.net",
+    "b21eaed643e4cb",
+    "4756773b",
+    "wjh0001db");
     // test if connection was established, and print any errors
     if($db->connect_errno){
     die("Connectfailed['.$db->connect_error.']");
