@@ -50,4 +50,5 @@ body{
 
 li:hover{
     color: black;
+    cursor: pointer;
 }
