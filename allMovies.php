@@ -22,6 +22,14 @@
     die("Connectfailed['.$db->connect_error.']");
     };
 
+    $sql_query = "SELECT * FROM superheros WHERE superpower LIKE %aser%";
+    $result = $db->query($sql_query);
+    while($row = $result->fetch_array()){
+        echo"<p>" . $row['superheroName'] . "</p>";
+    }
+    $result->close();
+    $db->close();
+
         ?>
 </body>
 </html>
