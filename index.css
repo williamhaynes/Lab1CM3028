@@ -25,5 +25,25 @@ body{
     color: white;
     letter-spacing: 1px;
     line-height: 90px;
+}
+
+#navigationBar{
+    /*Bounding box controls*/
+    height: 300px;
+    width: 100%;
+    min-width: 465px;
+    background: ghostwhite;
+
+    /*Location on screen controls*/
+    padding-left: 50%; /*centers text*/
+    margin-left: -50%;
+    padding-top: 0px;
+    /*Text/Font Controls*/
+    font-family: 'Yatra One', cursive;
+    text-align: center;
+    font-size: 250%;
+    color: white;
+    text-shadow: -1px -1px 2px #000000, 1px 1px grey, 2px 1px 5px navy;
     list-style: none;
+
 }
