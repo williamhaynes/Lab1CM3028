@@ -2,6 +2,13 @@
 <html>
     <head>
         <title>Marvel-Movies</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
     </head>
     <body>
     <div id="mainBox">
